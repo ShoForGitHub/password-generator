@@ -1,0 +1,56 @@
+body {
+  background-color: #273549;
+  display: flex;
+}
+
+#app-area {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+}
+
+#title {
+  color: white;
+}
+
+#sub-title {
+  color: lightslategray;
+}
+
+#random-password {
+  color: #C4B5FD;
+}
+
+#generate-btn {
+  background-color: #8B5CF6;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+hr {
+  color: gray;
+}
+
+#generate-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.box {
+  width: 180px;
+  height: 45px;
+  background-color: #2F3E53;
+  border-radius: 5px;
+}
+
+.generated-passwords {
+  text-align: center;
+  color: white;
+}
