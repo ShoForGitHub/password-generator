@@ -10,8 +10,29 @@
         <span id="random-password">random password</span>
       </h1>
       <p id="sub-title">Never use an insecure password again</p>
-      <button id="generate-btn">Generate passwords</button>
+
+      <div class="controller">
+        <div class="button-container">
+          <button id="generate-btn">Generate passwords</button>
+        </div>
+
+        <div class="toggle">
+            <input type="checkbox" id="numbers-switch" name="numbers"/>
+            <div class="switch-text">
+              <label for="numbers">Number On/Off</label>
+            </div>
+        </div>
+        
+        <div class="toggle">
+            <input type="checkbox" id="symbols-switch" name="symbols" />
+            <div class="switch-text">
+              <label for="symbols">Symbols On/Off</label>
+            </div>
+        </div>
+
+      </div>
       <hr>
+
       <div id="generate-area">
         <div class="box">
           <p class="generated-passwords"> </p>
