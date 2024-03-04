@@ -7,6 +7,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 300px;
+  max-width: 450px;
 }
 
 #title {
@@ -48,14 +49,16 @@ hr {
 }
 
 .box {
-  width: 180px;
+  width: 190px;
   height: 45px;
   background-color: #2F3E53;
   border-radius: 5px;
 }
 
 .generated-passwords {
+  font-size: 13.5px;
   text-align: center;
+  text-wrap: nowrap;
   color: white;
 }
 
@@ -68,6 +71,7 @@ input {
   border-radius: var(--s);
   padding: calc(var(--s)/10);
   margin: calc(var(--s)/2);
+  margin-left: 0px;
   cursor: pointer;
   background:
     radial-gradient(farthest-side, white 96%, #0000) var(--_p, 0%)/var(--s) content-box no-repeat,
@@ -93,4 +97,16 @@ input:checked {
 .toggle {
   display: flex;
   align-items: center;
+}
+
+.controller {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
+/* mediaquery 180px */
+
+.choose-length > label {
+  color: white;
+  font-size: 15px;
 }

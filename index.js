@@ -33,8 +33,14 @@ function toggleJudge(switchToggle) {
 
 function generatePassword() {
   let password = "";
-  for (let i = 0; i < 15; i ++) {
+  let passwordLength = getPasswordLength();
+  for (let i = 0; i < passwordLength; i ++) {
     password += characters[Math.floor(Math.random() * characters.length)];
   }
   return password;
+}
+
+function getPasswordLength() {
+  var passwordLength = document.getElementById("password-length").value;
+  return passwordLength;
 }
