@@ -62,11 +62,9 @@ hr {
 input {
   --s: 15px;
   /* adjust this to control the size*/
-
   height: var(--s);
   aspect-ratio: 2.5;
   width: auto;
-  /* some browsers need this */
   border-radius: var(--s);
   padding: calc(var(--s)/10);
   margin: calc(var(--s)/2);

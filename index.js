@@ -18,7 +18,6 @@ generateBtn.addEventListener("click", function() {
   Passwords.forEach((item) => item.textContent = generatePassword());
 })
 
-
 function toggleJudge(switchToggle) {
   switchToggle.addEventListener("change", function() {
   characters = [];
