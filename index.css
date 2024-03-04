@@ -110,3 +110,18 @@ input:checked {
   color: white;
   font-size: 15px;
 }
+
+#password-length {
+  background-color: #8B5CF6;
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+}
+
+#password-length:focus {
+  outline-color: white;
+}
+
+#password-length option:hover {
+  background-color: #6830eb;
+}
