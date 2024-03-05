@@ -123,5 +123,5 @@ input:checked {
 }
 
 #password-length option:hover {
-  background-color: #6830eb;
+  background-color: #6830eb !important;
 }
