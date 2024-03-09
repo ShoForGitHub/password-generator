@@ -122,6 +122,7 @@ input:checked {
   outline-color: white;
 }
 
-#password-length option:hover {
-  background-color: #6830eb !important;
+/* change background color of select options */
+option:checked,option:hover {
+  box-shadow: 0 0 10px 100px #6830eb inset;
 }

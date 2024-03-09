@@ -41,6 +41,21 @@ function generatePassword() {
 }
 
 function getPasswordLength() {
-  var passwordLength = document.getElementById("password-length").value;
+  let passwordLength = document.getElementById("password-length").value;
   return passwordLength;
 }
+
+// change background color of select options
+const selectPasswordLength = document.querySelector('#password-length');
+
+selectPasswordLength.addEventListener('focus', function() {
+  selectPasswordLength.size = 6;
+});
+
+selectPasswordLength.addEventListener('blur', function() {
+  selectPasswordLength.size = 1;
+});
+
+selectPasswordLength.addEventListener('change', function() {
+  selectPasswordLength.blur();
+});
