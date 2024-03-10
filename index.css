@@ -112,17 +112,10 @@ input:checked {
 }
 
 #password-length {
-  background-color: #8B5CF6;
-  color: white;
   border-radius: 5px;
   width: 50px;
 }
 
 #password-length:focus {
-  outline-color: white;
-}
-
-/* change background color of select options */
-option:checked,option:hover {
-  box-shadow: 0 0 10px 100px #6830eb inset;
+  outline-color: #8B5CF6;
 }
