@@ -7,7 +7,7 @@ let characters = [];
 characters = characters.concat(option.alphabets);
 
 let generateBtn = document.querySelector("#generate-btn");
-let Passwords = document.querySelectorAll(".generated-passwords");
+let Passwords = document.querySelectorAll(".password-text");
 let numbersSwitch = document.querySelector("#numbers-switch");
 let symbolsSwitch = document.querySelector("#symbols-switch");
 
