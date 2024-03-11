@@ -17,7 +17,8 @@ body {
 }
 
 #sub-title {
-  color: lightslategray;
+  color: #919FAC;
+  font-weight: bold;
   letter-spacing: -1px;
 }
 
@@ -26,7 +27,7 @@ body {
 }
 
 #generate-btn {
-  background-color: #8B5CF6;
+  background-color: #8655F6;
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -86,7 +87,7 @@ input {
 }
 
 input:checked {
-  --_c: #8B5CF6;
+  --_c: #8655F6;
   --_p: 100%;
   transform-origin: calc(100% - 3*var(--s)/5) 50%;
   transform: rotate(0.1deg);
@@ -120,5 +121,5 @@ input:checked {
 }
 
 #password-length:focus {
-  outline-color: #8B5CF6;
+  outline-color: #8655F6;
 }
