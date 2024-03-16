@@ -55,7 +55,7 @@ hr {
 .text-box {
   width: 185px;
   height: 45px;
-  background-color: #2F3E53;
+  background-color: #40536d;
   border-radius: 5px;
 }
 
@@ -108,7 +108,6 @@ input:checked {
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
 }
-/* mediaquery 180px */
 
 .choose-length > label {
   color: white;
@@ -122,4 +121,22 @@ input:checked {
 
 #password-length:focus {
   outline-color: #8655F6;
+}
+
+/* media query */
+@media only screen and (max-width: 412px) {
+  .controller {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  #password-length {
+    margin-bottom: 8px;
+  }
+}
+
+.click-to-copy {
+  color: white;
 }

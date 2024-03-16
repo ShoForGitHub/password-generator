@@ -44,3 +44,19 @@ function getPasswordLength() {
   let passwordLength = document.getElementById("password-length").value;
   return passwordLength;
 }
+
+// click to copy
+let passwordTexts = document.querySelectorAll(".password-text");
+
+passwordTexts.forEach(function(passwordText) {
+  passwordText.addEventListener("click", function() {
+    const textToCopy = passwordText.innerText;
+    navigator.clipboard.writeText(textToCopy)
+      .then(function() {
+        alert("Copied: " + textToCopy);
+      }).catch(function(error) {
+        alert("Sorry, failed to copy.")
+        console.error("Failed to copy:", error);
+      });
+  });
+});
